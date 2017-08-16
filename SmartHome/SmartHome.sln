@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Device", "Device", "{70EDC8C1-8E8E-47EA-9087-C3D1274AC789}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHome.BackgroundProcess", "SmartHome.BackgroundProcess\SmartHome.BackgroundProcess.csproj", "{24D798A7-9A11-4A01-BBAC-230A0CDBCC7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24D798A7-9A11-4A01-BBAC-230A0CDBCC7D}.Debug|ARM.ActiveCfg = Debug|ARM
+		{24D798A7-9A11-4A01-BBAC-230A0CDBCC7D}.Debug|ARM.Build.0 = Debug|ARM
+		{24D798A7-9A11-4A01-BBAC-230A0CDBCC7D}.Debug|ARM.Deploy.0 = Debug|ARM
+		{24D798A7-9A11-4A01-BBAC-230A0CDBCC7D}.Debug|x64.ActiveCfg = Debug|x64
+		{24D798A7-9A11-4A01-BBAC-230A0CDBCC7D}.Debug|x64.Build.0 = Debug|x64
+		{24D798A7-9A11-4A01-BBAC-230A0CDBCC7D}.Debug|x64.Deploy.0 = Debug|x64
+		{24D798A7-9A11-4A01-BBAC-230A0CDBCC7D}.Debug|x86.ActiveCfg = Debug|x86
+		{24D798A7-9A11-4A01-BBAC-230A0CDBCC7D}.Debug|x86.Build.0 = Debug|x86
+		{24D798A7-9A11-4A01-BBAC-230A0CDBCC7D}.Debug|x86.Deploy.0 = Debug|x86
+		{24D798A7-9A11-4A01-BBAC-230A0CDBCC7D}.Release|ARM.ActiveCfg = Release|ARM
+		{24D798A7-9A11-4A01-BBAC-230A0CDBCC7D}.Release|ARM.Build.0 = Release|ARM
+		{24D798A7-9A11-4A01-BBAC-230A0CDBCC7D}.Release|ARM.Deploy.0 = Release|ARM
+		{24D798A7-9A11-4A01-BBAC-230A0CDBCC7D}.Release|x64.ActiveCfg = Release|x64
+		{24D798A7-9A11-4A01-BBAC-230A0CDBCC7D}.Release|x64.Build.0 = Release|x64
+		{24D798A7-9A11-4A01-BBAC-230A0CDBCC7D}.Release|x64.Deploy.0 = Release|x64
+		{24D798A7-9A11-4A01-BBAC-230A0CDBCC7D}.Release|x86.ActiveCfg = Release|x86
+		{24D798A7-9A11-4A01-BBAC-230A0CDBCC7D}.Release|x86.Build.0 = Release|x86
+		{24D798A7-9A11-4A01-BBAC-230A0CDBCC7D}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{24D798A7-9A11-4A01-BBAC-230A0CDBCC7D} = {70EDC8C1-8E8E-47EA-9087-C3D1274AC789}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6ACE6999-CEB4-42B2-89CD-07EB5D3CA8DF}
+	EndGlobalSection
+EndGlobal
