@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{24D798A7-9A11-4A01-BBAC-230A0CDBCC7D}</ProjectGuid>
+    <ProjectGuid>{F2136B83-0BBB-4CF0-8B73-96A18D002AD8}</ProjectGuid>
     <OutputType>winmdobj</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SmartHome.BackgroundProcess</RootNamespace>
