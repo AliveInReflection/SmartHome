@@ -27,8 +27,8 @@ namespace SmartHome.Mobile.Droid.Platform
                 Format = ZXing.BarcodeFormat.QR_CODE,
                 Options = new ZXing.Common.EncodingOptions
                 {
-                    Width = 300,
-                    Height = 300,
+                    Width = 400,
+                    Height = 400,
                     Margin = 10
                 }
             };

@@ -3,10 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SmartHome.Mobile.Pages.MainTab">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="MainTab"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Row="0" Grid.ColumnSpan="2" x:Name="BarCodeImage" WidthRequest="300" HeightRequest="300"/>
+            <Label Grid.Row="1" Grid.ColumnSpan="2" x:Name="LockerLabel" Text="LOCKED" HorizontalTextAlignment="Center" VerticalTextAlignment="End" TextColor="DarkBlue" FontSize="20" FontAttributes="Bold"/>
+            <Button Grid.Row="2" Grid.Column="1" x:Name="WatchButton" Text="Watch" Clicked="WatchButton_OnClicked"/>
+            <Button Grid.Row="2" Grid.Column="0"   x:Name="LockerButton" Text="Unlock" Clicked="LockButton_OnClicked"/>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

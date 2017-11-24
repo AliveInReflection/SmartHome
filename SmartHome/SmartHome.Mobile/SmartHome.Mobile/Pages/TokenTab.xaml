@@ -8,7 +8,7 @@
                 <RowDefinition Height="9*"></RowDefinition>
                 <RowDefinition Height="1*"></RowDefinition>
             </Grid.RowDefinitions>
-            <Image Grid.Row="0" x:Name="BarCodeImage" WidthRequest="300" HeightRequest="300"/>
+            <Image Grid.Row="0" x:Name="BarCodeImage" WidthRequest="400" HeightRequest="400"/>
             <Button Grid.Row="1"  x:Name="BarCodeGenerateButton" Text="Generate" Clicked="Button_OnClicked" VerticalOptions="End"></Button>
         </Grid>
     </ContentPage.Content>
