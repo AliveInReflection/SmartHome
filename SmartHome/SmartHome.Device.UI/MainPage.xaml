@@ -8,62 +8,18 @@
     mc:Ignorable="d"
     Width="800"
     Height="480">
-    
-    <Page.Resources>
-        <Style x:Key="DefaultButton" TargetType="Button">
-            <Setter Property="Background" Value="Transparent"></Setter>
-            <Setter Property="Foreground" Value="Aqua"></Setter>
-            <Setter Property="FontSize" Value="30"></Setter>
-            <Setter Property="FontWeight" Value="Bold"></Setter>
-            <Setter Property="Height" Value="80"></Setter>
-            <Setter Property="Width" Value="80"></Setter>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border BorderBrush="SteelBlue" BorderThickness="3" CornerRadius="30">
-                            <ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </Page.Resources>
 
-    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Background="#012" Width="800" Height="480">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="100"></RowDefinition>
-            <RowDefinition></RowDefinition>
-        </Grid.RowDefinitions>
+    <Grid Style="{StaticResource PageGrid}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Grid Grid.Row="1" Width="300">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="100"></ColumnDefinition>
-                <ColumnDefinition Width="100"></ColumnDefinition>
-                <ColumnDefinition Width="100"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="90"></RowDefinition>
-                <RowDefinition Height="90"></RowDefinition>
-                <RowDefinition Height="90"></RowDefinition>
-                <RowDefinition Height="90"></RowDefinition>
-            </Grid.RowDefinitions>
-            <Button Grid.Row="0" Grid.Column="0" Style="{StaticResource DefaultButton}" Content="1" Click="Button_Click"/>
-            <Button Grid.Row="0" Grid.Column="1" Style="{StaticResource DefaultButton}" Content="2" Click="Button_Click"/>
-            <Button Grid.Row="0" Grid.Column="2" Style="{StaticResource DefaultButton}" Content="3" Click="Button_Click"/>
-            <Button Grid.Row="1" Grid.Column="0" Style="{StaticResource DefaultButton}" Content="4" Click="Button_Click"/>
-            <Button Grid.Row="1" Grid.Column="1" Style="{StaticResource DefaultButton}" Content="5" Click="Button_Click"/>
-            <Button Grid.Row="1" Grid.Column="2" Style="{StaticResource DefaultButton}" Content="6" Click="Button_Click"/>
-            <Button Grid.Row="2" Grid.Column="0" Style="{StaticResource DefaultButton}" Content="7" Click="Button_Click"/>
-            <Button Grid.Row="2" Grid.Column="1" Style="{StaticResource DefaultButton}" Content="8" Click="Button_Click"/>
-            <Button Grid.Row="2" Grid.Column="2" Style="{StaticResource DefaultButton}" Content="9" Click="Button_Click"/>
-            <Button Grid.Row="3" Grid.Column="0" Style="{StaticResource DefaultButton}" Content="C" Click="Button_Click"/>
-            <Button Grid.Row="3" Grid.Column="1" Style="{StaticResource DefaultButton}" Content="0" Click="Button_Click"/>
-            <Button Grid.Row="3" Grid.Column="2" Style="{StaticResource DefaultButton}" Content="&lt;" Click="Button_Click"/>
-        </Grid>
-        <Button Grid.Row="1" Grid.Column="1" Style="{StaticResource DefaultButton}" FontSize="50" HorizontalAlignment="Center" Content="Call" Height="300" Width="200" Click="Button_Click"/>
-        <TextBox x:Name="Screeen" Grid.Row="0" Grid.Column="0" Text="Please, enter your password" Padding="25" FontSize="30" FontWeight="Bold" Background="Transparent" Foreground="Aqua"/>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Style="{StaticResource BigButton}" Height="420" Content="Call" Click="CallButton_Click"/>
+        <Button Grid.Row="0" Grid.Column="1" Style="{StaticResource BigButton}" Content="Token" Click="TokebButton_Click"/>
+        <Button Grid.Row="1" Grid.Column="1" Style="{StaticResource BigButton}" Content="Password" Click="PasswordButton_Click"/>
     </Grid>
 </Page>
