@@ -20,7 +20,7 @@
 
         <Button Grid.Column="0" Grid.RowSpan="2" Style="{StaticResource BackButton}" Content="&lt;" Click="BackButton_Clicked"/>
 
-        <CaptureElement Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" Name="PreviewControl" Stretch="Uniform" Width="500"/>
+        <MediaElement Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" Name="PreviewControl" Stretch="Uniform" Width="500" PosterSource="../../Assets/play-image.png"/>
 
         <Button x:Name="ScanButton" Grid.Row="0" Grid.RowSpan="2" Grid.Column="2" Style="{StaticResource BigButton}" FontSize="50" Content="Scan" Height="400" Width="180" Click="ScanButton_Click"/>
     </Grid>

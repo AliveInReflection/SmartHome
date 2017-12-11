@@ -23,11 +23,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHome.Mobile.UWP", "Sma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHome.Mobile.iOS", "SmartHome.Mobile\SmartHome.Mobile.iOS\SmartHome.Mobile.iOS.csproj", "{05DB05EB-8B2E-4B24-990F-3161640121AF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MobileShared", "MobileShared", "{80A61520-9C0B-4DBE-BE1A-DF606AA251E1}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{B05CFF86-7F94-4FCA-9482-BD53314DA6A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHome.Common", "SmartHome.Common\SmartHome.Common.csproj", "{FAD63CA2-2E05-4673-8E17-3183185B5E45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartHome.Common", "SmartHome.Common\SmartHome.Common.csproj", "{FAD63CA2-2E05-4673-8E17-3183185B5E45}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

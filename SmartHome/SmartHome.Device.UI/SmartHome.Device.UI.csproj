@@ -101,8 +101,20 @@
     <Compile Include="Pages\CallPage.xaml.cs">
       <DependentUpon>CallPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\NoInternetPage.xaml.cs">
+      <DependentUpon>NoInternetPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PasswordPage.xaml.cs">
+      <DependentUpon>PasswordPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RejectedPage.xaml.cs">
+      <DependentUpon>RejectedPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\TokenPage.xaml.cs">
       <DependentUpon>TokenPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\UnlockedNotificationPage.xaml.cs">
+      <DependentUpon>UnlockedNotificationPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -113,6 +125,7 @@
     <None Include="SmartHome.Device.UI_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\play-image.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -135,7 +148,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\NoInternetPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PasswordPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RejectedPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\TokenPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\UnlockedNotificationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

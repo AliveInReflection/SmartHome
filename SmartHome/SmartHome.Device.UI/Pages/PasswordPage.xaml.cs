@@ -21,16 +21,15 @@ namespace SmartHome.Device.UI.Pages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class CallPage : Page
+    public sealed partial class PasswordPage : Page
     {
-
         private const string DefaultText = "Flat number";
         private const string ClearCommand = "C";
         private const string CorrectCommand = "<";
         private IEnumerable<string> DigitsCommands = Enumerable.Range(0, 10).Select(d => d.ToString()).ToList();
         private StringBuilder CurrentText = new StringBuilder(DefaultText);
 
-        public CallPage()
+        public PasswordPage()
         {
             this.InitializeComponent();
         }
@@ -89,7 +88,7 @@ namespace SmartHome.Device.UI.Pages
             CurrentText.Append(DefaultText);
             UpdateScreen();
 
-            Frame.Navigate(typeof(NoInternetPage));
+            Frame.Navigate(typeof(RejectedPage));
         }
     }
 }

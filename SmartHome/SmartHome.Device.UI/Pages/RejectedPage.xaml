@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="SmartHome.Device.UI.Pages.RejectedPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SmartHome.Device.UI.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Style="{StaticResource PageGrid}" Background="DarkRed" >
+        <Border BorderThickness="0" Width="800" Height="480">
+            <TextBlock Text="REJECTED" Foreground="White" FontSize="60" FontWeight="Bold" VerticalAlignment="Center" TextAlignment="Center"></TextBlock>
+        </Border>
+    </Grid>
+</Page>

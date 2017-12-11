@@ -46,7 +46,7 @@ namespace SmartHome.Device.UI
 
         private void PasswordButton_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            Frame.Navigate(typeof(PasswordPage));
         }
     }
 }

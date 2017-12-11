@@ -48,22 +48,22 @@ namespace SmartHome.Device.UI.Pages
 
         private async void ScanButton_Click(object sender, RoutedEventArgs e)
         {
-            var scanner = new MobileBarcodeScanner(this.Dispatcher)
-            {
-                UseCustomOverlay = false,
-                TopText = "Hold camera up to QR code",
-                BottomText = "Camera will automatically scan QR code",
-            };
+            //var scanner = new MobileBarcodeScanner(this.Dispatcher)
+            //{
+            //    UseCustomOverlay = false,
+            //    TopText = "Hold camera up to QR code",
+            //    BottomText = "Camera will automatically scan QR code",
+            //};
 
-            var scanningOptions = new MobileBarcodeScanningOptions()
-            {
-                DelayBetweenAnalyzingFrames = 100,
-                PossibleFormats = new List<BarcodeFormat>()
-                {
-                    BarcodeFormat.QR_CODE
-                },
-                DelayBetweenContinuousScans = 100
-            };
+            //var scanningOptions = new MobileBarcodeScanningOptions()
+            //{
+            //    DelayBetweenAnalyzingFrames = 100,
+            //    PossibleFormats = new List<BarcodeFormat>()
+            //    {
+            //        BarcodeFormat.QR_CODE
+            //    },
+            //    DelayBetweenContinuousScans = 100
+            //};
 
             //scanner.ScanContinuously(scanningOptions, result =>
             //{
@@ -78,9 +78,11 @@ namespace SmartHome.Device.UI.Pages
             //});
 
             //await InitializeCameraAsync();
-            var result = await scanner.Scan(scanningOptions);
+            // var result = await scanner.Scan(scanningOptions);
             //await CleanupCameraAsync();
 
+
+            Frame.Navigate(typeof(UnlockedNotificationPage));
         }
 
         private void BackButton_Clicked(object sender, RoutedEventArgs e)
@@ -131,7 +133,7 @@ namespace SmartHome.Device.UI.Pages
         {
             _displayRequest.RequestActive();
 
-            PreviewControl.Source = _mediaCapture;
+            //PreviewControl.Source = _mediaCapture;
 
             await _mediaCapture.StartPreviewAsync();
             _isPreviewing = true;
